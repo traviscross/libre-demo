@@ -312,7 +312,7 @@ int main(int argc, char *argv[])
 	/* listen on random port */
 	sa_set_port(&laddr, 0);
 
-	/* ddd supported SIP transports */
+	/* add supported SIP transports */
 	err |= sip_transp_add(sip, SIP_TRANSP_UDP, &laddr);
 	err |= sip_transp_add(sip, SIP_TRANSP_TCP, &laddr);
 	if (err) {
