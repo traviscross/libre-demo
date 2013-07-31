@@ -344,7 +344,7 @@ int main(int argc, char *argv[])
 
 	/* add G.711 sdp media format */
 	err = sdp_format_add(NULL, sdp_media, false, "0", "PCMU", 8000, 1,
-			     NULL, NULL, false, NULL);
+			     NULL, NULL, NULL, false, NULL);
 	if (err) {
 		re_fprintf(stderr, "sdp format error: %s\n", strerror(err));
 		goto out;

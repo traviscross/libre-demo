@@ -5,7 +5,7 @@
 #
 
 PROJECT   := redemo
-VERSION   := 0.4.0
+VERSION   := 0.4.1
 
 DEMOS	  += sip_ua
 DEMOS	  += tcp_server
@@ -42,4 +42,4 @@ $(BUILD): Makefile
 	@touch $@
 
 clean:
-	@rm -rf $(BINS) $(BUILD)/
+	@rm -rf $(BINS) $(BUILD)
